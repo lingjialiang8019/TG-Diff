@@ -1,0 +1,21 @@
+{
+  "model": {"bert_name": "bert-base-uncased"},
+  "data": {
+    "train_manifest": "dataset/train.json",
+    "image_size": 352,
+    "max_length": 128,
+    "augmentation": "eight_way"
+  },
+  "diffusion": {"timesteps": 1000, "beta_start": 0.0001, "beta_end": 0.02},
+  "loss": {"ual_lambda": 0.5, "snr_gamma": 5.0},
+  "training": {
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "num_workers": 4,
+    "seed": 42,
+    "save_every": 10,
+    "output_dir": "outputs/run_01"
+  }
+}

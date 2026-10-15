@@ -1,0 +1,20 @@
+{
+  "split": "train",
+  "text_source": "image_and_mask",
+  "records": [
+    {
+      "image": "train/images/example.jpg",
+      "mask": "train/masks/example.png",
+      "text": "A ship is near the top-left corner.",
+      "augmented_text": {
+        "rot90": "A ship is near the bottom-left corner.",
+        "rot180": "A ship is near the bottom-right corner.",
+        "rot270": "A ship is near the top-right corner.",
+        "flip_identity": "A ship is near the top-right corner.",
+        "flip_rot90": "A ship is near the bottom-right corner.",
+        "flip_rot180": "A ship is near the bottom-left corner.",
+        "flip_rot270": "A ship is near the top-left corner."
+      }
+    }
+  ]
+}

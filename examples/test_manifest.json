@@ -1,0 +1,7 @@
+{
+  "split": "test",
+  "text_source": "rgb_only",
+  "records": [
+    {"image": "test/images/example.jpg", "text": "A ship is near the top-left corner."}
+  ]
+}
